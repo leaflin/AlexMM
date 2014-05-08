@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>flexBox橫</title>
+<style type="text/css">
+body{
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-size: 50px;
+	}
+.box {
+	
+}
+.boxControl {
+	display: flex;
+	flex-direction:row;
+	height:100vh;
+	
+}
+.box .boxControl .boxControl.box01{
+	background-color: #F90; 
+	flex:1;
+	
+}
+.box .boxControl .boxControl.box02 {
+	background-color: #090;
+	flex:2;
+}
+.box .boxControl .boxControl.box03 {
+	background-color: #0C0;
+	flex:3;
+}
+.box .boxControl .boxControl.box04 {
+	background-color: #008080;
+	flex:3;
+}
+</style>
+</head>
+
+<body>
+<div class="box">
+<div class="boxControl">
+  
+  <div class="boxControl box01">1</div>
+  <div class="boxControl box02">2</div>
+  <div class="boxControl box03">3</div>
+  <div class="boxControl box04">4</div>
+
+  </div>
+	
+<!--用class控制選項 class可以重複使用 id只能使
+用單一
+
+	+boxControl 
+        -boxControl next (child)
+        -boxControl prev (child)
+    
+    In html code ---class="boxControl next" (中間空白)
+    In css  code----.box .boxControl .boxControl.next(連接chain)
+    
+----------------------------------------------------------------->
+<!--a other way is [class*="col-"]{}
+
+	[class*="col-"]//is parent
+    	.col-box1//is child
+        .col-box2//is child
+----------------------------------------------------------------->
+<!--boxControl成為控制選項--parent box01 is child>
+
+
+
+</div>
+</body>
+</html>

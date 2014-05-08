@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FlexBoxCss</title>
+<style type="text/css">
+.Container {
+	display: flex;/**/
+	flex-direction:row;/*column row reverse*/
+	width: 100%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+[class*="col-"] {
+	flex:2;
+	height:100vh;/*vw vh is auto screen*/
+	}
+body {
+	padding: 0px;
+	margin: 0px;
+	font-size: 20em;
+	text-align: center;
+}
+
+.col-1 {
+	background-color: #069;
+	order:3;/*順序*/
+}
+.col-2{
+	background-color: #399;
+	order:2;
+	
+}
+.col-3{
+	background-color: #FC0;
+	order:1;
+	
+	}
+</style>
+</head>
+
+<body>
+<div class="Container">
+  <div class="col-1"> 1</div>
+  <div class="col-2"> 2</div>
+  <div class="col-3"> 3</div>
+</div>
+</body>
+</html>
