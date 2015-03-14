@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jquery random img 2nd</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+//**jquery random image 2nd
+//1.0.1 css line 
+$(document).ready(function(e) {
+	   var arr=[1,2,3];
+	   var rand = arr[Math.floor(Math.random() * arr.length)];
+	   alert(rand);
+	  //$("body").html('<img src="img/bk0'+rand+'.jpg" width="1920" height="1200">');
+		 $("body").css('background-image','url(img/bk0'+rand+'.jpg)')
+  
+});
+
+</script>
+<style type="text/css">
+body {
+	background-image: url(img/bk01.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 100vh;
+	padding:0px;
+	margin:0px;
+}
+
+.joom{
+	background-color: rgba(51,51,51,0.56);
+	position: absolute;
+	z-index: 10;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	height: 100vh;
+	width: 100%;
+}
+.joom p{
+	color:
+	color: #FFF;
+	font-size: 24px;
+	color: #FFF;
+	text-align: center;
+	word-spacing: 1em;
+	}
+</style>
+</head>
+
+<body>
+<div class="joom">
+    <p>NO cambin</p>
+    <p>jquery css&nbsp;rand&nbsp;img when page load</p>
+    <p>by&nbsp;AlexLinn</p>
+    <p>&nbsp;</p>
+
+
+</div>
+</body>
+</html>
