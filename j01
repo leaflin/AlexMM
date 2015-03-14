@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jquery random img</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+//**jquery random image 1nd
+$(document).ready(function(e) {
+	$("#a2").hide();
+	$("#a3").hide();
+	   var arr=[1,2,3];
+	   var rand = arr[Math.floor(Math.random() * arr.length)];
+	   alert(rand);
+	  $("#a1").html('<img src="img/bk0'+rand+'.jpg" width="1920" height="1200">');
+
+  
+});
+
+</script>
+<style type="text/css">
+body {
+	padding: 0px;
+	margin: 0px;
+}
+.box {
+	background-color: #FF0000;
+	position: absolute;
+	z-index: 10;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: .5;
+}
+.box img{
+	width: 100%;
+	height: 100vh;
+	background-position: center center;
+	background-size: cover;
+	z-index: -10;
+	background-repeat: no-repeat;
+	background-color: #006;
+}
+
+</style>
+</head>
+
+<body>
+<div class="box">
+
+<div id="a1"><img src="img/bk01.jpg" width="800" height="504"></div>
+<div id="a2"><img src="img/bk02.jpg" width="800" height="504"></div>
+<div id="a3"><img src="img/bk03.jpg" width="800" height="504"></div>
+
+
+</div>
+</body>
+</html>
